@@ -92,12 +92,12 @@ h1 {
 }
 
 
-/* Etiqueta del correo */
+/* Etiqueta del nombre */
 
 .signup-form label {
-    color: #34343a; /* Define el color de la etiqueta */
-    font-size: 14px; /* Establece el tamaño */
-    font-weight: bold; /* Aplica negrita */
+    color: #333333; /* Define el color de la etiqueta */
+    font-size: 16px; /* Establece el tamaño */
+    font-weight: normal; /* Aplica negrita */
 }
 
 
