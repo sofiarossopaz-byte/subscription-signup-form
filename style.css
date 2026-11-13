@@ -1,0 +1,181 @@
+
+/* =====================================
+   1. CONFIGURACIÓN GENERAL
+===================================== */
+
+* {
+    box-sizing: border-box; /* Incluye bordes y espacios en las dimensiones */
+}
+
+body {
+    margin: 0; /* Elimina los márgenes predeterminados */
+    font-family: Arial, Helvetica, sans-serif; /* Define la tipografía */
+    color: #333333; /* Establece el color principal del texto */
+    background-color: #f4f6f7; /* Define un fondo claro */
+}
+
+
+/* =====================================
+   2. CENTRADO DE LA PÁGINA
+===================================== */
+
+.page {
+    min-height: 100vh; /* Ocupa como mínimo toda la pantalla */
+    display: flex; /* Activa el diseño flexible */
+    align-items: center; /* Centra verticalmente el formulario */
+    justify-content: center; /* Centra horizontalmente el formulario */
+    padding: 32px 18px; /* Agrega espacio alrededor */
+}
+
+
+/* =====================================
+   3. CONTENEDOR DEL FORMULARIO
+===================================== */
+
+.signup-card {
+    width: 100%; /* Permite adaptar el ancho */
+    max-width: 560px; /* Limita el ancho máximo */
+    padding: 48px 42px; /* Agrega espacio interior */
+    background-color: #ffffff; /* Establece el fondo blanco */
+    border-radius: 16px; /* Redondea las esquinas */
+    text-align: center; /* Centra el contenido */
+    box-shadow: 0 12px 35px rgba(35, 55, 65, 0.08); /* Agrega sombra */
+}
+
+
+/* =====================================
+   4. TEXTO INTRODUCTORIO
+===================================== */
+
+.eyebrow {
+    margin: 0 0 14px; /* Agrega espacio inferior */
+    color: #71808a; /* Define un color secundario */
+    font-size: 12px; /* Define el tamaño del texto */
+    font-weight: bold; /* Aplica negrita */
+    letter-spacing: 1.8px; /* Separa las letras */
+}
+
+
+/* =====================================
+   5. TÍTULO PRINCIPAL
+===================================== */
+
+h1 {
+    margin: 0 0 18px; /* Agrega espacio inferior */
+    color: #471869; /* Establece el color morado solicitado */
+    font-size: clamp(28px, 5vw, 38px); /* Adapta el tamaño */
+    line-height: 1.2; /* Controla el espacio entre líneas */
+}
+
+
+/* =====================================
+   6. DESCRIPCIÓN DEL PRODUCTO
+===================================== */
+
+.description {
+    margin: 0 0 28px; /* Agrega espacio inferior */
+    color: #626b70; /* Define el color del párrafo */
+    font-size: 16px; /* Establece el tamaño de fuente */
+    line-height: 1.7; /* Mejora la legibilidad */
+}
+
+
+/* =====================================
+   7. FORMULARIO DE REGISTRO
+===================================== */
+
+.signup-form {
+    display: flex; /* Activa el diseño flexible */
+    flex-direction: column; /* Organiza los elementos verticalmente */
+    gap: 12px; /* Separa los elementos */
+    text-align: left; /* Alinea el contenido a la izquierda */
+}
+
+
+/* Etiqueta del correo */
+
+.signup-form label {
+    color: #34343a; /* Define el color de la etiqueta */
+    font-size: 14px; /* Establece el tamaño */
+    font-weight: bold; /* Aplica negrita */
+}
+
+
+/* Campo de correo electrónico */
+
+.signup-form input {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 15px 16px; /* Agrega espacio interior */
+    border: 1px solid #d8dce0; /* Define el borde */
+    border-radius: 8px; /* Redondea las esquinas */
+    background-color: #ffffff; /* Establece el fondo blanco */
+    color: #333333; /* Define el color del texto */
+    font-size: 16px; /* Establece el tamaño de fuente */
+}
+
+
+/* Efecto al seleccionar el campo */
+
+.signup-form input:focus {
+    border-color: #471869; /* Cambia el borde a morado */
+    outline: 2px solid rgba(71, 24, 105, 0.15); /* Agrega un contorno */
+}
+
+
+/* =====================================
+   8. BOTÓN DE SUSCRIPCIÓN
+===================================== */
+
+.signup-form button {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-top: 6px; /* Agrega espacio superior */
+    padding: 16px 20px; /* Define el espacio interior */
+    border: none; /* Elimina el borde */
+    border-radius: 8px; /* Redondea las esquinas */
+    background-color: #471869; /* Establece el color morado solicitado */
+    color: #ffffff; /* Define el texto blanco */
+    font-size: 16px; /* Define el tamaño del texto */
+    font-weight: bold; /* Aplica negrita */
+    cursor: pointer; /* Cambia el cursor */
+    transition: background-color 0.2s ease; /* Suaviza el cambio de color */
+}
+
+
+/* Efecto al pasar el cursor */
+
+.signup-form button:hover {
+    background-color: #5b2384; /* Aclara el morado al pasar el cursor */
+}
+
+
+/* Indicador de selección con teclado */
+
+.signup-form button:focus-visible {
+    outline: 3px solid #b99bd0; /* Agrega un contorno visible */
+    outline-offset: 3px; /* Separa el contorno del botón */
+}
+
+
+/* =====================================
+   9. AVISO DE PRIVACIDAD
+===================================== */
+
+.privacy-note {
+    margin: 20px 0 0; /* Agrega espacio superior */
+    color: #858c90; /* Define un color discreto */
+    font-size: 12px; /* Reduce el tamaño del texto */
+    line-height: 1.5; /* Mejora la lectura */
+}
+
+
+/* =====================================
+   10. DISEÑO RESPONSIVE
+===================================== */
+
+@media (max-width: 480px) {
+
+    .signup-card {
+        padding: 36px 24px; /* Reduce el espacio interior en móviles */
+    }
+
+}
