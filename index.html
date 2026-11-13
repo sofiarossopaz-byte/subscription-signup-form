@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
     <title>BarkerBox | Get 15% Off</title>
 
     <!-- Conexión con el archivo CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -19,9 +20,17 @@
         <!-- Contenedor principal del formulario -->
         <section class="signup-card">
 
+            <!-- Texto introductorio -->
             <p class="eyebrow">
                 A LITTLE TREAT FOR YOUR BEST FRIEND
             </p>
+
+            <!-- Imagen del perro -->
+            <img
+                class="featured-img"
+                src="./ict-signupform.jpg"
+                alt="Happy dog wearing red sunglasses"
+            >
 
             <!-- Título principal -->
             <h1>BarkerBox — Get 15% Off!</h1>
@@ -37,10 +46,20 @@
 
             <!-- Formulario de registro -->
             <form class="signup-form" action="#" method="post">
-                <label for="text">Enter your name</label>
-                <input
-                type="text" id="name" placeholder="Enter your name" required
 
+                <!-- Campo para el nombre -->
+                <label for="name">Enter your name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    autocomplete="name"
+                    required
+                >
+
+                <!-- Campo para el correo electrónico -->
                 <label for="email">Email address</label>
 
                 <input
@@ -52,6 +71,7 @@
                     required
                 >
 
+                <!-- Botón de suscripción -->
                 <button type="submit">
                     Get My 15% Off
                 </button>
